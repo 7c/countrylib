@@ -1,6 +1,6 @@
 import { WorldCurrency } from "./WorldCurrency";
 import { WorldLanguage } from "./WorldLanguage";
-import { WorldRegion } from "./WorldRegion";
+import { WorldContinent } from "./WorldContinent";
 export type tCountryData = {
     name: {
         common: string;
@@ -13,7 +13,7 @@ export type tCountryData = {
     cioc: string;
     independent: boolean;
     currencies: WorldCurrency[];
-    region: WorldRegion;
+    continent: WorldContinent;
     capital: string[];
     status: string;
     languages: WorldLanguage[];

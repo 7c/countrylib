@@ -18,7 +18,7 @@ require('module-alias/register');
 __exportStar(require("./models/CountryData"), exports);
 __exportStar(require("./models/WorldCurrency"), exports);
 __exportStar(require("./models/WorldLanguage"), exports);
-__exportStar(require("./models/WorldRegion"), exports);
+__exportStar(require("./models/WorldContinent"), exports);
 __exportStar(require("./models/types"), exports);
 __exportStar(require("./config"), exports);
 __exportStar(require("./models/CountryLib"), exports);

@@ -1,4 +1,4 @@
-import { WorldRegion } from "./WorldRegion";
+import { WorldContinent } from "./WorldContinent";
 import { WorldLanguage } from "./WorldLanguage";
 import { WorldCurrency } from "./WorldCurrency";
 import { tCountryData } from "./types";
@@ -7,7 +7,6 @@ export class CountryData {
     public data : tCountryData = {} as tCountryData;
     constructor() {
     }
-
    
     static fromMledoze(data: any) : CountryData {
         const c = new CountryData();
@@ -23,7 +22,7 @@ export class CountryData {
             cioc: data.cioc.toUpperCase(),
             independent: data.independent,
             currencies: Object.entries(data.currencies).map(([key, value]) => new WorldCurrency(key, (value as any).symbol)),
-            region: new WorldRegion(data.region, data.subregion),
+            continent: new WorldContinent(data.continent, data.subregion),
             capital: data.capital,
             status: data.status,
             //{ nld: 'Dutch', pap: 'Papiamento' }

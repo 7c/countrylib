@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.CountryData = void 0;
-const WorldRegion_1 = require("./WorldRegion");
+const WorldContinent_1 = require("./WorldContinent");
 const WorldLanguage_1 = require("./WorldLanguage");
 const WorldCurrency_1 = require("./WorldCurrency");
 class CountryData {
@@ -22,7 +22,7 @@ class CountryData {
             cioc: data.cioc.toUpperCase(),
             independent: data.independent,
             currencies: Object.entries(data.currencies).map(([key, value]) => new WorldCurrency_1.WorldCurrency(key, value.symbol)),
-            region: new WorldRegion_1.WorldRegion(data.region, data.subregion),
+            continent: new WorldContinent_1.WorldContinent(data.continent, data.subregion),
             capital: data.capital,
             status: data.status,
             //{ nld: 'Dutch', pap: 'Papiamento' }

@@ -36,7 +36,7 @@ The `CountryLib` class provides an interface to manage and retrieve country data
 **Example Usage:**
 
 ```typescript
-import { CountryLib } from '@7c/countrylib';
+import { CountryLib } from 'countrylib';
 
 async function testCountryLib() {
   // Instantiate the class (optionally pass a custom configuration)
@@ -75,7 +75,7 @@ CountryData {
     cioc: 'USA',
     independent: true,
     currencies: [ WorldCurrency { code: 'USD', symbol: '$' } ],
-    region: WorldRegion { name: 'Americas', code: 'North America' },
+    continent: WorldContinent { name: 'Americas', code: 'North America' },
     capital: [ 'Washington D.C.' ],
     status: 'officially-assigned',
     languages: [ WorldLanguage { name: 'eng', code: 'English' } ],

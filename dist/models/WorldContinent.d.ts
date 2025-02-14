@@ -1,6 +1,6 @@
-export declare class WorldRegion {
+export declare class WorldContinent {
     name: string;
     code: string;
     constructor(name: string, code: string);
 }
-//# sourceMappingURL=WorldRegion.d.ts.map
+//# sourceMappingURL=WorldContinent.d.ts.map
