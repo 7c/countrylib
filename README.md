@@ -1,14 +1,14 @@
-# @7c/countrylib Documentation
+# CountryLib Documentation
 
 ## Overview
-`@7c/countrylib` provides configuration management with a built-in caching layer. It uses the [`cache-manager`](https://www.npmjs.com/package/cache-manager) package along with the [`cache-manager-fs-hash`](https://www.npmjs.com/package/cache-manager-fs-hash) disk store to handle caching on the filesystem.
+`CountryLib` provides configuration management with a built-in caching layer. It uses the [`cache-manager`](https://www.npmjs.com/package/cache-manager) package along with the [`cache-manager-fs-hash`](https://www.npmjs.com/package/cache-manager-fs-hash) disk store to handle caching on the filesystem.
 
 ## Installation
 
 Install the package via npm or yarn:
 
 ```sh
-npm install --save @7c/countrylib
+npm install --save countrylib
 ```
 
 ## File Details
