@@ -1,0 +1,48 @@
+{
+  "name": "@7c/countrylib",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest --forceExit"
+  },
+  "keywords": [
+    "country",
+    "iso3166",
+    "data",
+    "lib",
+    "typescript",
+    "nodejs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/7c/countrylib.git"
+  },
+  "author": "7c",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "debug": "^4.4.0",
+    "minimist": "^1.2.8",
+    "module-alias": "^2.2.3",
+    "cache-manager": "^6.4.0",
+    "cache-manager-fs-hash": "^2.0.0",
+    "mybase": "^1.1.47"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@types/jest": "^29.5.14",
+    "@types/minimist": "^1.2.5",
+    "@types/node": "^22.13.4",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5"
+  },
+  "files": [
+    "dist/"
+  ],
+  "_moduleAliases": {
+    "@root": ".",
+    "@models": "./models/",
+    "@inc": "./inc/"
+  }
+}
