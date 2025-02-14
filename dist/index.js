@@ -21,4 +21,5 @@ __exportStar(require("./models/WorldLanguage"), exports);
 __exportStar(require("./models/WorldRegion"), exports);
 __exportStar(require("./models/types"), exports);
 __exportStar(require("./config"), exports);
+__exportStar(require("./models/CountryLib"), exports);
 //# sourceMappingURL=index.js.map
