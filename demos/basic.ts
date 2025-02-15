@@ -5,9 +5,9 @@ async function main() {
     const countryLib = new CountryLib();
     await countryLib.loadData();
     const US = countryLib.getByCode('US');
-    // console.dir(countryLib.data, { depth: null });
+    const SY = countryLib.getByName('Syria');
     console.dir(US, { depth: null });
+    console.dir(SY, { depth: null });
 }
-
 
 main()

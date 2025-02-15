@@ -2,11 +2,14 @@ import { WorldCurrency } from "./WorldCurrency";
 import { WorldLanguage } from "./WorldLanguage";
 import { WorldContinent } from "./WorldContinent";
 
+export type tTranslations = {
+    [key: string]: string;
+}
+
 export type tCountryData = {
     name: {
         common: string;
         official: string;
-
     };
     tld: string[];
     cca2: string; // ISO 3166-1 alpha-2
@@ -15,7 +18,7 @@ export type tCountryData = {
     cioc: string; // IOC code
     independent: boolean;
     currencies: WorldCurrency[];
-    continent: WorldContinent;
+    continent?: WorldContinent;
     capital: string[];
     status: string;
     languages: WorldLanguage[];
@@ -23,4 +26,9 @@ export type tCountryData = {
     lng: number;
     flag: string; // unicode flag
     area: number;
+    timezones: string[];
+    coordinates: {
+        latitude: number;
+        longitude: number;
+    }[];
 }
